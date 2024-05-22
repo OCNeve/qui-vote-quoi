@@ -48,6 +48,37 @@ CREATE TABLE voters.prenoms_occurences (
         UNIQUE (departement_id, annee_id)
 );
 
+CREATE TABLE voters.candidats (
+    id SERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE voters.inscrits_par_depatement (
+    id SERIAL PRIMARY KEY,
+    departement_id INTEGER NOT NULL,
+    compte INTEGER NOT NULL,
+    CONSTRAINT fk_departement_id
+        FOREIGN KEY (departement_id)
+        REFERENCES departements (id)
+);
+
+CREATE TABLE voters.votes_par_departements (
+    id SERIAL PRIMARY KEY,
+    candidat_fk INTEGER NOT NULL,
+    departement_id INTEGER NOT NULL,
+    compte_votes INTEGER NOT NULL,
+    compte_inscrit INTEGER NOT NULL,
+    CONSTRAINT fk_candidat_id
+        FOREIGN KEY (candidat_fk)
+        REFERENCES candidats (id),
+    CONSTRAINT fk_departement_id
+        FOREIGN KEY (departement_id)
+        REFERENCES departements (id)
+);
+
+
+
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA voters TO dev_user;
 
 COMMIT;
