@@ -93,8 +93,9 @@ def import_names_data(data):
 	print('inserted prenoms occurences')
 
 
-data = extract_names_data()
-import_names_data(data)
+#data = extract_names_data()
+#import_names_data(data)
+#pgc.connection.commit()
 
 
 df = extract_elections_data()
