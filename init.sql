@@ -54,15 +54,6 @@ CREATE TABLE voters.candidats (
     prenom VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE voters.inscrits_par_depatement (
-    id SERIAL PRIMARY KEY,
-    departement_id INTEGER NOT NULL,
-    compte INTEGER NOT NULL,
-    CONSTRAINT fk_departement_id
-        FOREIGN KEY (departement_id)
-        REFERENCES departements (id)
-);
-
 CREATE TABLE voters.votes_par_departements (
     id SERIAL PRIMARY KEY,
     candidat_fk INTEGER NOT NULL,
