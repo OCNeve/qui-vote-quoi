@@ -1,6 +1,6 @@
 # A propos
 _voici un diagram d'architecture de données. Les tables en `rouge` représantent des sources de données à plat_
-[](datastructure.png)
+![](./datastructure.png)
 # Startup
 _le projet dépend de `python 3.12` et de `docker_
 
