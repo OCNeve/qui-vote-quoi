@@ -1,5 +1,5 @@
 # Startup
-_le projet dépend de `python 3.12` et de `docker`_
+_le projet dépend de `python 3.12` et de `docker_
 
 ## Infrastructure
 Lancer les contenaires
@@ -16,7 +16,13 @@ http://localhost:15432/
 python -m pip install poetry
 ```
 ```bash
+cd ./data_dumper
+```
+```bash
 python -m poetry install
+```
+```bash
+python -m poetry run python main.py
 ```
 
 ### Unix (bash/zsh)
@@ -25,5 +31,11 @@ python -m poetry install
 python3 -m pip3 install poetry
 ```
 ```bash
+cd ./data_dumper
+```
+```bash
 python3 -m poetry install
+```
+```bash
+python3 -m poetry run python3 main.py
 ```
