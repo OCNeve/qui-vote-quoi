@@ -13,9 +13,9 @@ WITH age_filtered_occurences AS (
         JOIN voters.prenoms p ON po.prenom_id = p.id
         JOIN voters.annees a ON po.annee_id = a.id
     WHERE
-        p.valeur = 'DAVID'  -- Replace 'given_prenom' with the actual name
+        p.valeur = '$NAME$'  -- Replace 'given_prenom' with the actual name
         AND a.valeur ~ '^\d{4}$'  -- Ensure valid year entries
-        AND a.valeur::INTEGER BETWEEN (EXTRACT(YEAR FROM CURRENT_DATE) - 25) AND (EXTRACT(YEAR FROM CURRENT_DATE) - 15)
+        AND a.valeur::INTEGER BETWEEN $LOWER_DATE_RANGE$ AND $UPPER_DATE_RANGE$
 ),
 departement_total AS (
     SELECT
@@ -26,7 +26,7 @@ departement_total AS (
         JOIN voters.annees a ON po.annee_id = a.id
     WHERE
         a.valeur ~ '^\d{4}$'  -- Ensure valid year entries
-        AND a.valeur::INTEGER BETWEEN (EXTRACT(YEAR FROM CURRENT_DATE) - 25) AND (EXTRACT(YEAR FROM CURRENT_DATE) - 15)
+        AND a.valeur::INTEGER BETWEEN $LOWER_DATE_RANGE$ AND $UPPER_DATE_RANGE$
     GROUP BY
         po.departement_id
 ),
