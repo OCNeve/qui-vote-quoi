@@ -23,7 +23,9 @@ else:
 		remake_database()
 		_import()
 	elif sys.argv[1] == "desktopui":
-		print('running tk ui')
+		from tkui.main import Root
+		root = Root()
+		root.mainloop()
 	elif sys.argv[1] == "webserver":
 		print('starting webserver')
 	elif sys.argv[1] == "cli":

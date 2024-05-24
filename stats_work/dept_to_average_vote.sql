@@ -6,7 +6,7 @@ WITH department_votes AS (
         voters.votes_par_departements v
         JOIN voters.departements d ON v.departement_id = d.id
     WHERE
-        d.numero = '72' 
+        d.numero = '$DEPT$'
     GROUP BY
         v.candidat_fk
 )
