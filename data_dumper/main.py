@@ -87,7 +87,7 @@ def import_names_data(data):
 	"""
 	INSERT INTO voters.prenoms_occurences (departement_id, annee_id, prenom_id, compte) 
 	VALUES (%s, %s, %s, %s) 
-	ON CONFLICT (departement_id, annee_id) DO NOTHING;
+	ON CONFLICT (departement_id, annee_id, prenom_id) DO NOTHING;
 	""", 
 	prenoms_data)
 	print('inserted prenoms occurences')

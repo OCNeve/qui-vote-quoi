@@ -45,7 +45,7 @@ CREATE TABLE voters.prenoms_occurences (
         FOREIGN KEY (prenom_id)
         REFERENCES prenoms (id),
     CONSTRAINT unique_annee_dept_prenom
-        UNIQUE (departement_id, annee_id)
+        UNIQUE (departement_id, annee_id, prenom_id)
 );
 
 CREATE TABLE voters.candidats (
