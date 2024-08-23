@@ -23,9 +23,6 @@ http://localhost:15432/
 python -m pip install poetry
 ```
 ```bash
-cd ./data_dumper
-```
-```bash
 python -m poetry install
 ```
 
@@ -33,9 +30,6 @@ python -m poetry install
 
 ```bash
 python3 -m pip3 install poetry
-```
-```bash
-cd ./data_dumper
 ```
 ```bash
 python3 -m poetry install
