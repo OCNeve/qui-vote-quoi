@@ -49,7 +49,7 @@ class MainFrame(CTkFrame):
 		self.result_frame.pack_forget()
 		del self.result_frame
 		self.result_frame = ResultFrame(self)
-		self.result_frame.add_result(get_vote(pgc, self.name_entry.get(), (self.selected_lower_date.get(), self.selected_upper_date.get())))
+		self.result_frame.add_result(get_vote(pgc, self.name_entry.get().upper(), (self.selected_lower_date.get(), self.selected_upper_date.get())))
 		self.result_frame.pack()
 
 class PrettyLabel(CTkLabel):
