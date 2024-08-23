@@ -5,7 +5,7 @@ Suite à un procéssus ETL, nous allons coréléer ces données grâce à des re
 _voici un diagram d'architecture de données. Les tables en `rouge` représantent des sources de données à plat._
 ![](./datastructure.png)
 # Startup
-_le projet dépend de `python 3.12` et de `docker_
+_le projet dépend de `python 3.12` et de `docker`_
 
 ## Infrastructure
 Lancer les contenaires
