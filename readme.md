@@ -58,3 +58,6 @@ python -m poetry run python main.py desktopui
 ```bash
 python3 -m poetry run python3 main.py desktopui
 ```
+## Exemple du résultat
+![photo of result](resultat.png)
+
