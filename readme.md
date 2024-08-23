@@ -1,5 +1,5 @@
 # A propos
-Le but de ce projet est de coréler les registres d'éta civile et le données relative aux éléctions présidentielles 2022. 
+Le but de ce projet est de coréler les registres d'éta civile et les données relative aux éléctions présidentielles 2022. 
 Suite à un procéssus ETL, nous allons coréléer ces données grâce à des requêtes SQL effectuées sur la base de donnée Postres et donner le résultat dans l'IHM créé à cet effet.
 # Architecture BDD
 _voici un diagram d'architecture de données. Les tables en `rouge` représantent des sources de données à plat._
