@@ -60,4 +60,4 @@ python3 -m poetry run python3 main.py desktopui
 ```
 ## Exemple du résultat
 ![photo of result](resultat.png)
-
+_les résultats peuvent différer d'un import à l'autre, car les données évoluent selon la mise à jour des registres officiels._

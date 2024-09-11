@@ -167,7 +167,7 @@ def _import():
 
 	pgc.close()
 
-	print(time()-st	)
+	print(time() - st)
 
 
 
