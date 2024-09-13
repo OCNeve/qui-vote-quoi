@@ -9,8 +9,8 @@ jobs:
           python-version: '3.12'
       - uses: actions/checkout@v3
       - uses: abatilo/actions-poetry@v2
-      - uses: hoverkraft-tech/compose-action@v2.0.1
-      
+      # - uses: hoverkraft-tech/compose-action@v2.0.1
+
       - run: poetry install --no-root
-      - run: docker-compose up -d
+      - run: docker compose up -d
       - run: poetry run python3 main.py import
