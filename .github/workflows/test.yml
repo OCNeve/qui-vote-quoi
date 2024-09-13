@@ -6,11 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: docker compose up -d
-
-  import-data:
-    runs-on: ubuntu-latest
-    needs: build-docker
-    steps:
+      
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v5
         with:
