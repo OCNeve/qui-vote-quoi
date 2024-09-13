@@ -1,12 +1,12 @@
-name: test
+name: test-infrastructure-and-import
 on: push
 jobs:
-  build-docker:
+  test-infrastructure-and-import:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: docker compose up -d
-      
+
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v5
         with:
