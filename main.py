@@ -20,7 +20,7 @@ else:
 	if sys.argv[1] == "import":
 		print('importing data')
 		from data_dumper.main import _import
-		if not (len(argv) == 3 and argv[2] == "-y"):
+		if not (len(sys.argv) == 3 and sys.argv[2] == "-y"):
 			remake_database()
 		_import()
 	elif sys.argv[1] == "desktopui":
