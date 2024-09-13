@@ -1,10 +1,7 @@
 name: test
 on: push
 jobs:
-  print:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$PWD"
-      - run: ls
-      - run: pip install pylint
-      - run: pylint main.py
+      uses: actions/checkout@v3
