@@ -4,5 +4,6 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "$PWD"
       - run: pip install pylint
       - run: pylint main.py
