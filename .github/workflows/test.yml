@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is a test from bash"
-      - run: python3 -c "import sys;print('this is a test from python{sys.version}')"
+      - run: python3 -c "import sys;print(f'this is a test from python{sys.version}')"
