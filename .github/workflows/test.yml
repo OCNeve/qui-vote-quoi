@@ -2,7 +2,7 @@ name: test
 on: push
 jobs:
   print:
-    runs_on: ubuntu-latest
+    run_on: ubuntu-latest
     steps:
       - run: echo "this is a test from bash"
       - run: python3 -c "print('this is a test from python')"
