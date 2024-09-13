@@ -4,5 +4,5 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is a test from bash"
+      - run: pip install pylint
       - run: pylint main.py
