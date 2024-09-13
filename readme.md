@@ -10,7 +10,7 @@ _le projet dépend de `python 3.12` et de `docker`_
 ## Infrastructure
 Lancer les contenaires
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 Une fois les contenaires en cours d'execution, vous pouvez consulter pgadmin
 ```bash

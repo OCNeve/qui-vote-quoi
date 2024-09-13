@@ -20,7 +20,8 @@ else:
 	if sys.argv[1] == "import":
 		print('importing data')
 		from data_dumper.main import _import
-		remake_database()
+		if not (len(argv) == 3 and argv[2] == "-y"):
+			remake_database()
 		_import()
 	elif sys.argv[1] == "desktopui":
 		from tkui.main import Root
