@@ -159,7 +159,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-
+data_dumper/data/
+data_dumper/data/*
 .DS_Store	
 */.DS_Store
 ./.DS_Store
