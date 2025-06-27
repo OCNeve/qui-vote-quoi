@@ -7,7 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-psycopg2-binary = "^2.9.9"
 python-dotenv = "^1.0.1"
 requests = "^2.32.2"
 pandas = "^2.2.2"
@@ -16,7 +15,9 @@ customtkinter = "^5.2.2"
 pylint = "^3.2.7"
 plotly = "^6.0.1"
 sqlalchemy = "^2.0.41"
-psycopg2 = "^2.9.10"
+folium = "^0.20.0"
+psycopg2-binary = "^2.9.10"
+streamlit-folium = "^0.25.0"
 
 
 [build-system]

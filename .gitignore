@@ -161,6 +161,9 @@ cython_debug/
 
 data_dumper/data/
 data_dumper/data/*
+data_dumper/data/elections.xlsx
+data_dumper/data/dpt2021.csv
+
 .DS_Store	
 */.DS_Store
 ./.DS_Store
